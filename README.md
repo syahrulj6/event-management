@@ -1,17 +1,29 @@
 Tech Stack:
+
 React(Vite) + TypeScript
+
 React Router DOM
+
 Tailwind CSS
+
 Mock Authentication (simulasi JWT)
 
 Autentikasi (Mock):
+
 Pada aplikasi ini, proses autentikasi disimulasikan di sisi frontend (mock authentication).
+
 Alasan Menggunakan Mock Auth:
+
 Meskipun dokumentasi API menyediakan endpoint /api/login dan /api/logout, endpoint tersebut tidak dapat diakses secara publik dan mengembalikan respons 404 Not Found ketika dipanggil dari frontend.
+
 Agar tetap dapat menampilkan alur autentikasi yang lengkap, saya menerapkan mock authentication untuk menunjukkan:
+
 Alur login
+
 Penyimpanan token
+
 Protected route
+
 Proses logout
 
 Alur Autentikasi:
