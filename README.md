@@ -47,7 +47,8 @@ Event Detail Page (/events/:id):
 - Simulasi join event
 
 Cara Menjalankan Aplikasi:
-- npm install
+- npm install (untuk menginstall semua dependency yang diperlukan)
+- Buat file .env di root folder. Lalu tambahkan variable VITE_BASE_API_URL='ganti-ini-dengan-endpoint-backend'
 - npm run dev
 
 Pertanyaan Wajib:
