@@ -1,95 +1,56 @@
-Volunteer Event App
+Tech Stack:
+- React (Vite) + TypeScript
+- React Router DOM
+- Tailwind CSS
 
-Aplikasi frontend untuk menampilkan daftar event relawan dengan alur autentikasi.
-Dibuat sebagai bagian dari frontend technical test.
+Autentikasi (Mock):
+- Pada aplikasi ini, proses autentikasi disimulasikan di sisi frontend (mock authentication).
+- Alasan Menggunakan Mock Auth
+- Meskipun dokumentasi API menyediakan endpoint /api/login dan /api/logout, endpoint tersebut tidak dapat diakses secara publik dan mengembalikan respons 404 Not Found ketika dipanggil dari frontend.
+- Agar tetap dapat menampilkan alur autentikasi yang lengkap, saya menerapkan mock authentication untuk menunjukkan:
+- Alur login
+- Penyimpanan token
+- Protected route
+- Proses logout
 
-Tech Stack
+Alur Autentikasi:
+- User mengisi email dan password
+- Service login melakukan simulasi request (delay)
+- Token JWT palsu dikembalikan
+- Token disimpan di localStorage
+- Protected route dapat diakses
+- Logout menghapus token dan redirect ke halaman login
 
-React (Vite) + TypeScript
+Routing & Layout:
+- AuthLayout:
+  - Digunakan untuk halaman /login
+  - Full page layout
+  - Tanpa navbar
+- AppLayout:
+  - Digunakan setelah login
+  - Menggunakan navbar
+  - Route dilindungi dengan protected route
 
-React Router DOM
+Pages:
+- Login Page (/login)
+- Input email & password
+- Show / hide password
+- Loading & error state
 
-Tailwind CSS
+Event List Page (/events):
+- Fetch data event dari API
+- Menampilkan judul dan tanggal event
+- Loading, empty, dan error state
 
-Mock Authentication (simulasi JWT)
+Event Detail Page (/events/:id):
+- Menampilkan detail event
+- Simulasi join event
 
-Autentikasi (Mock)
+Cara Menjalankan Aplikasi:
+- npm install
+- npm run dev
 
-Pada aplikasi ini, proses autentikasi disimulasikan di sisi frontend (mock authentication).
-
-Alasan Menggunakan Mock Auth
-
-Meskipun dokumentasi API menyediakan endpoint /api/login dan /api/logout, endpoint tersebut tidak dapat diakses secara publik dan mengembalikan respons 404 Not Found ketika dipanggil dari frontend.
-
-Agar tetap dapat menampilkan alur autentikasi yang lengkap, saya menerapkan mock authentication untuk menunjukkan:
-
-Alur login
-
-Penyimpanan token
-
-Protected route
-
-Proses logout
-
-Alur Autentikasi
-
-User mengisi email dan password
-
-Service login melakukan simulasi request (delay)
-
-Token JWT palsu dikembalikan
-
-Token disimpan di localStorage
-
-Protected route dapat diakses
-
-Logout menghapus token dan redirect ke halaman login
-
-Routing & Layout
-AuthLayout
-
-Digunakan untuk halaman /login
-
-Full page layout
-
-Tanpa navbar
-
-AppLayout
-
-Digunakan setelah login
-
-Menggunakan navbar
-
-Route dilindungi dengan protected route
-
-Pages
-Login Page (/login)
-
-Input email & password
-
-Show / hide password
-
-Loading & error state
-
-Event List Page (/events)
-
-Fetch data event dari API
-
-Menampilkan judul dan tanggal event
-
-Loading, empty, dan error state
-
-Event Detail Page (/events/:id)
-
-Menampilkan detail event
-
-Simulasi join event
-
-Cara Menjalankan Aplikasi
-npm install
-npm run dev
-
-Pertanyaan Wajib
+Pertanyaan Wajib:
 1. Bagian tersulit apa dari sisi frontend?
 
 Bagian tersulit adalah menentukan pendekatan autentikasi ketika endpoint login yang disediakan tidak dapat diakses secara publik.
