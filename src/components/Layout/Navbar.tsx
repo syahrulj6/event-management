@@ -25,7 +25,7 @@ export const Navbar = () => {
     <nav className="fixed top-0 left-0 z-50 w-full bg-white border-b border-neutral-200">
       <div className="container mx-auto flex items-center justify-between px-4 py-4">
         <NavLink to="/" className="text-lg font-semibold text-blue-600">
-          VolunteerEvent
+          EM
         </NavLink>
 
         <div className="hidden md:flex items-center gap-4">

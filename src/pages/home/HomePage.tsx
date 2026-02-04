@@ -17,7 +17,7 @@ const HomePage = () => {
         <div className="space-y-8">
           <div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              Join Amazing <span className="text-blue-600">Volunteer Events</span> Near You
+              Join Amazing <span className="text-blue-600">Events</span> Near You
             </h1>
             <p className="text-lg text-neutral-600 mb-6 leading-relaxed">Discover meaningful opportunities to give back to your community. Connect with like-minded people and make a difference through local volunteering events.</p>
             <div className="flex items-center gap-4 text-neutral-600 mb-8">
@@ -67,7 +67,7 @@ const HomePage = () => {
             <div className="absolute inset-0 bg-linear-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
               <div className="absolute bottom-4 left-4 text-white">
                 <p className="text-sm font-semibold">Tech Conference 2026</p>
-                <p className="text-xs">50+ volunteers joined</p>
+                <p className="text-xs">50+ attended</p>
               </div>
             </div>
           </div>
