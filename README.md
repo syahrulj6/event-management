@@ -31,6 +31,20 @@ Routing & Layout:
   - Menggunakan navbar
   - Route dilindungi dengan protected route
 
+Struktur Folder:
+- pages
+  - Berisi halaman utama aplikasi seperti Home, Login, Event List, dan Event Detail.
+- components
+  - Berisi komponen reusable seperti layout, navbar, dan komponen UI umum.
+- routes
+  - Berisi konfigurasi routing aplikasi, termasuk public route dan protected route.
+- services
+  - Berisi logic komunikasi API dan autentikasi, seperti service event dan mock auth.
+- utils
+  - Berisi helper function seperti pengelolaan token dan utility lainnya.
+- types
+  - Berisi antarmuka typescript
+
 Pages:
 - Login Page (/login)
 - Input email & password
